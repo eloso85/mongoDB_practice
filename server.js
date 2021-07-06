@@ -11,4 +11,9 @@ const db = mongoose.connection;
 db.on('error', (error)=> console.error(error))
 db.once('open', ()=> console.log('connected to database'))
 
-app.listen(3000, ()=> console.log('server started'));
+app.use(express.json());
+
+const userRoute = require('./routes/users')
+app.use('/users', userRoute)
+
+app.listen(3005, ()=> console.log('server started'));
