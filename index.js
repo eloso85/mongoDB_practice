@@ -5,7 +5,7 @@ const port = 3000;
 
 //Mongo Api
 const {MongoClient} = require("mongodb");
-const uri = "mongodb://myUserAdmin:myUserAdmin@localhost:27017";
+//const uri = ;
 
 app.use(cors());
 app.use(express.json());
