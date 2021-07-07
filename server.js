@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 //connecting to Data base
-
-mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true})
+//db name create db
+mongoose.connect(process.env.DATABASE_URL,{dbName:"myapp",useNewUrlParser: true})
 const db = mongoose.connection;
 
 db.on('error', (error)=> console.error(error))
