@@ -1,0 +1,15 @@
+GET http://localhost:3005/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": 1,
+    "fname": "Cat",
+    "lname": "Chat",
+    "username": "karn.yong@mecallapi.com",
+    "email": "karn.yong@mecallapi.com",
+    "avatar": "https://mecallapi.com/users/1.png"
+}
