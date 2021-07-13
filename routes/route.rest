@@ -2,14 +2,18 @@ GET http://localhost:3005/users
 
 ###
 
-POST http://localhost:3000/users
+POST http://localhost:3005/users
 Content-Type: application/json
 
 {
-    "id": 1,
-    "fname": "Cat",
-    "lname": "Chat",
+    "id": 4,
+    "fname": "Alex",
+    "lname": "segura",
     "username": "karn.yong@mecallapi.com",
     "email": "karn.yong@mecallapi.com",
     "avatar": "https://mecallapi.com/users/1.png"
 }
+
+##
+
+GET http://localhost:3005/users/4

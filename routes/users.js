@@ -1,4 +1,5 @@
 const express = require('express');
+//const user = require('../models/user');
 const router = express.Router();
 const User = require('../models/user')
 
@@ -27,7 +28,42 @@ router.post('/', async(req, res)=>{
     } catch (err) {
         res.status(400).json({ message: err.message})
     }
+});
+
+
+// Get one subscriber
+
+router.get('/:id', getUser,(req, res)=>{
+    res.json(res.user)
+});
+
+// Update one User
+router.patch('/:id', getUser, async(req, res)=>{
+});
+
+// Delete one User
+router.delete('/:id', getUser, async(req, res)=>{
+
 })
+
+//This is the middle ware
+async function getUser(req, res, next){
+    try {
+        user = await User.findById(req.params.id)
+        if(user === null) {
+            return res.status(404).json({ message: "Cant find User"})
+        }
+    } catch (err) {
+        return res.status(500).json({message: err.message})
+    }
+
+    res.user = user
+    
+    next()
+}
+
+
+
 
 
 
