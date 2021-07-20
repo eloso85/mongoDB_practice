@@ -1,0 +1,34 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Lato', sans-serif;
+}
+
+#left-col{
+    border-right: solid #000000 2px;
+    height: 800px;
+    
+    
+}
+
+#center-col{
+    
+    
+}
+
+#right-col{
+    border-left:solid black 2px;
+    
+}

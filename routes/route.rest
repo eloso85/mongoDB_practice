@@ -14,6 +14,27 @@ Content-Type: application/json
     "avatar": "https://mecallapi.com/users/1.png"
 }
 
-##
+###
 
-GET http://localhost:3005/users/4
+GET http://localhost:3005/users/60e53c70ec365634a09c904f
+
+###
+
+DELETE http://localhost:3005/users/60e53c70ec365634a09c904f
+
+### 
+
+PATCH http://localhost:3005/users/60ed09e3f612e82b4864a13f
+    Content-Type: application/json 
+
+    {
+    "id": 1928820,
+    "fname": "Test",
+    "lname": "Test",
+    "username": "Test",
+    "email": "Test",
+    "avatar": "Test"
+}
+
+
+
